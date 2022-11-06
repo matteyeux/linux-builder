@@ -3,6 +3,7 @@
 Build minimal ARM64 kernel + busybox + qemu
 
 ### Running
+
 `bash linux_builder.sh`
 
 The script will create a directory named `dbglinux` and copy all the needed files to start the ARM64 minimal OS.
@@ -45,7 +46,6 @@ Then you can run it with qemu : `qemu-system-aarch64 -cpu cortex-a53 -M virt -ke
 | |) | _ \ (_ | |__| | ' \ || \ \ /
 |___/|___/\___|____|_|_||_\_,_/_\_
 ~matteyeux
-/bin/sh: can't access tty; job control turned off
 / # uname -a
 Linux (none) 6.1.0-rc3 #1 SMP PREEMPT Sun Nov  6 15:58:55 CET 2022 aarch64 GNU/Linux
 / # 
