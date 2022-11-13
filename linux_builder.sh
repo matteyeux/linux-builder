@@ -36,7 +36,7 @@ function build_linux() {
     make ARCH=arm64 defconfig
 
     info "Building Linux kernel with $(nproc) cores"
-    make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image -j$(nproc)
+    yes | make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image -j$(nproc)
 
     cd ..
     cp ${LINUX}/{vmlinux,arch/arm64/boot/Image} dbglinux/
